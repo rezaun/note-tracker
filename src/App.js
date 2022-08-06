@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
 
-   fetch("notes.json")
+   fetch("http://localhost:5000/notes")
    .then(res=>res.json())
    .then(data=>setNotes(data))
 
