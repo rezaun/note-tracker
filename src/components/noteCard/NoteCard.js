@@ -12,7 +12,7 @@ const customStyles = {
 
 const NoteCard = ({ note }) => {
 
-  console.log(note);
+  //console.log(note);
 
   return (
     <div className="col mt-5" style={{ position: "relative" }}>
@@ -27,10 +27,10 @@ const NoteCard = ({ note }) => {
           </p>
         </div>
         <div className="card-body mt-5">
-          <h5 className="card-title">Author : {note.userName}</h5>
+          <h5 className="card-title" >Author : {note.userName}</h5>
           <p className="card-text">{note.textData}</p>
-          <p className="card-text">Price: ${note.price}</p>
-          <p className="card-text">Author: {note.author}</p>
+          {/* <p className="card-text">Price: ${note.price}</p>
+          <p className="card-text">Author: {note.author}</p> */}
         </div>
         <div className="card-footer d-flex justify-content-center">
           <div>

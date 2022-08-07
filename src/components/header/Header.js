@@ -1,9 +1,6 @@
 import React from "react";
 
-const Header = () => {
-  
-  
-  
+const Header = ( {handleSearch} ) => {   
   
   return (
     <nav className="navbar navbar-dark bg-dark">
@@ -11,15 +8,9 @@ const Header = () => {
         <span className="fw-bold fs-5 text-white mx-auto">NOTES_TRACKER</span>
 
 
-        <form className="d-flex">
+        <form className="d-flex" onSubmit={handleSearch}>
 
-          <input
-            className="form-control me-2"
-            type="search"
-            name="searchText"
-            placeholder="Search"
-            aria-label="Search"
-          />
+          <input className="form-control me-2" type="search" name="searchText" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-outline-success" type="submit">
             Search
           </button>
